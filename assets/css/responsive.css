@@ -1,0 +1,916 @@
+/* *************************************************
+HOME PAGE RESPONSIVE
+************************************************* */
+
+
+/* ===============================
+Extra : 1. 1400px devices
+=============================== */
+
+@media screen and (max-width: 1400px){
+    
+ 
+    /*********************** 
+    1.1-1400 banner area here
+    ***********************/
+    .banner {
+        padding: 150px 0px 150px;
+    }
+    .banner .vector img:nth-child(1) {
+        top: calc(7%);
+        left: calc(2%);
+    }
+    .banner .vector img:nth-child(2) {
+        bottom: calc(10%);
+        left: calc(2%);
+    }
+    .banner_content h2 {
+        line-height: 50px;
+        font-size: 45px;
+    }
+    .banner_content p {
+        margin-bottom: 30px;
+    }
+    .banner-img {
+        width: 480px;
+    }
+
+    /*********************** 
+    1.2-1400 ourService area here
+    ***********************/
+    .ourService_section_content {
+        padding: 47px 26px 47px;
+    }
+    .our_service_section .vector img,
+    .creative_team .vector img {
+        left: calc(1%);
+    }
+
+
+
+
+}
+
+
+    
+
+/* =============================
+Extra large: 2. 1200 xlarge devices
+============================== */
+
+@media screen and (max-width: 1200px){
+   
+    /*********************** 
+    2.1-1200 banner area here
+    ***********************/
+    .banner {
+        padding: 130px 0px 130px;
+    }
+    .banner_content h2 {
+        margin-bottom: 20px;
+        line-height: 46px;
+        font-size: 40px;
+    }
+    
+    /*********************** 
+    2.2-1200 company logo area here
+    ***********************/
+    .company_logo {
+        padding: 120px 0px 90px;
+    }
+    .company_logo_img {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .company_logo_img li {
+        margin: 0px 20px 30px;
+    }
+    
+    /*********************** 
+    2.3-1200 i-am area here
+    ***********************/
+    .i-am_area .i-am_content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 34px;
+    }
+    .i-am_area .i-am_content p {
+        margin-bottom: 20px;
+    }
+
+    /*********************** 
+    2.4-1200 life area here
+    ***********************/
+    .life-content {
+        margin-right: 0px;
+        margin-top: 80px;
+    }
+    .life-content h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 34px;
+    }
+    .life-content h2 br{
+        display: none;
+    }
+
+    /*********************** 
+    2.5-1200 ourPort area here
+    ***********************/
+    .ourPort-item-thum.one,
+    .ourPort-item-thum.two,
+    .ourPort-item-thum.three,
+    .ourPort-item-thum.four,
+    .ourPort-item-thum.five,
+    .ourPort-item-thum.six{
+        height: 100%;
+    }
+
+    /*********************** 
+    2.6-1200 counterUp area here
+    ***********************/
+    .counterUp_item {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    /*********************** 
+    2.7-1200 creativeTeam area here
+    ***********************/
+    .creative_team_single .creative_content p br{
+        display: none;
+    }
+
+   
+
+
+}
+
+
+/* ==============================
+large layout: 3. 992px large devices
+============================= */
+
+@media screen and (max-width: 992px){
+    /*All vector are display none */
+    .vector{
+        display: none;
+    }
+   
+    /*********************** 
+    3.1-992 header top area here
+    ***********************/
+    .header-top {
+        padding: 13px 0px;
+    }
+    .header_top_contact {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    ul.header_topcontact {
+        text-align: center;
+    }
+    ul.header_topcontact li a span {
+        font-size: 14px;
+    }
+    ul.header_topcontact li {
+        margin-right: 0px;
+        margin: 0px 20px 10px;
+    }
+    ul.header_social_icon {
+        margin-bottom: 10px;
+    }
+    ul.header_social_icon li {
+        margin-left: 0px;
+        margin: 0px 15px;
+    }
+    ul.header_social_icon li a i {
+        font-size: 14px;
+    }
+
+    /*********************** 
+    3.2-992 header area here
+    ***********************/
+    .header_bottom .nav {
+        position: fixed;
+        top: 0;
+        left: -200%;
+        line-height: 60px;
+        background: var(--mainColor);
+        width: max-content;
+        padding: 120px 20px 40px;
+        display: block;
+        transition: all .6s ease;
+        z-index: 100;
+    }
+    .header_bottom .nav.active {
+        left: 0;
+    }
+    .header_bottom .nav > li > a{
+        color: var(--whiteColor);
+    }
+    .header_bottom .nav li a:hover {
+        color: var(--textColor);
+        text-decoration: underline;
+    }
+    .header_bottom .nav > li {
+        text-align: center;
+    }
+    .submenu {
+        position: relative;
+        background: var(--white);
+    }
+    .submenu li a {
+        color: var(--whiteColor);
+    }
+    .close-nav {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        line-height: 0;
+        margin: 0 !important;
+    }
+    .nav-toggler {
+        display: block;
+    }
+
+    /*********************** 
+    3.3-992 banner area here
+    ***********************/
+    .banner-img {
+        display: none;
+    }
+
+    /*********************** 
+    3.4-992 i-am area here
+    ***********************/
+    .i-am_content {
+        grid-template-columns: auto;
+        grid-gap: 80px;
+    }
+
+    /*********************** 
+    3.5-992 ourService area here
+    ***********************/
+    .ourService_section_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .single_service_section:nth-child(1){
+        order: 2;
+    }
+    .single_service_section:nth-child(2){
+        order: 1;
+    }
+    .single_service_section:nth-child(3){
+        order: 3;
+    }
+    .single_service_section:nth-child(4){
+        order: 4;
+    }
+    .single_service_section:nth-child(5){
+        order: 5;
+    }
+    .single_service_section:nth-child(6){
+        order: 6;
+    }
+    /*********************** 
+    3.6-992 counterUp area here
+    ***********************/
+    .counterUp_item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*********************** 
+    3.7-992 creativeTeam area here
+    ***********************/
+    .creative_team_contents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .creative_team_contents:nth-child(1),
+    .portfolio-items.orders{
+        order: 2;
+    }
+    .creative_team_contents:nth-child(2){
+        order: 1;
+    }
+    .creative_team_contents:nth-child(3){
+        order: 3;
+    }
+    .creative_team_contents .creative_content p br{
+        display: block;
+    }
+
+    /*********************** 
+    3.8-992 latestNews area here
+    ***********************/
+    .latest_news_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*********************** 
+    3.9-992 footer area her
+    ***********************/
+    .footer_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+/* ==============================
+Medium Layout: 4. 768px medium devices
+============================== */
+@media screen and (max-width: 768px){
+    
+    /*********************** 
+    4.1-768 banner area here
+    ***********************/
+    .banner {
+        padding: 120px 0px 120px;
+    }
+    .banner_content h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    /*********************** 
+    4.2-768 ourService area here
+    ***********************/
+    .ourService_title h2 br{
+        display: none;
+    }
+    .ourService_section_content {
+        grid-template-columns: auto;
+    }
+
+    /*********************** 
+    4.3-768 creativeTeam area here
+    ***********************/
+    .creative_team_contents {
+        grid-template-columns: auto;
+    }
+
+    /*********************** 
+    4.4-768 latestNews area here
+    ***********************/
+    .latest_news_items,
+    .footer_items,
+    .bdlf-group:nth-child(1) {
+        grid-template-columns: auto;
+    }
+
+}
+
+
+/* ===================================
+Small Layout: 5. 576px small devices
+=================================== */
+
+@media screen and (max-width: 576px){
+    
+    /*********************** 
+    5.1-576 header area here
+    ***********************/
+    .header_bottom .nav {
+        width: 100%;
+    }
+    .submenu {
+        width: 100%;
+    }
+
+    /*********************** 
+    5.2-576 banner area here
+    ***********************/
+    .banner_content h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .banner_content br {
+        display: none;
+    }
+    .banner_content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner_content ul li {
+        display: block;
+    }
+    .banner_content ul li:last-child {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    /*********************** 
+    5.3-576 company logo area here
+    ***********************/
+    .company_logo {
+        padding: 70px 0px 40px;
+    }
+
+    /*********************** 
+    5.4-576 i-am area here
+    ***********************/
+    .i-am {
+        padding-bottom: 70px;
+    }
+    .i-am_area .i-am_content h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .i-am_area .i-am_content h2 br {
+        display: none;
+    }
+    .i-am_area .i-am_content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*********************** 
+    5.5-576 ourService area here
+    ***********************/
+    .ourService_title h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .single_service_section {
+        padding: 47px 20px 47px;
+    }
+    .single_service_section .content h4 {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .single_service_section .content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /*********************** 
+    5.6-576 life area here
+    ***********************/
+    .life-content h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .life-content p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    /*********************** 
+    5.7-576 counterUp area here
+    ***********************/
+    .counterUp_item {
+        grid-template-columns: auto;
+    }
+
+    /*********************** 
+    5.8-576 creativeTeam area here
+    ***********************/
+    .creative_team_single .creative_content p br{
+        display: none;
+    }
+    .creative_team_single .creative_content h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .creative_team_single .creative_content a {
+        font-size: 16px;
+    }
+    .creative_team_single .creative_content p {
+        font-size: 16px;
+    }
+
+    /*********************** 
+    5.9-576 footer area here
+    ***********************/
+    .footer_content li h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer_content li a {
+        font-size: 16px;
+    }
+    .footer_single_item .content h4 a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer_single_item .content p {
+        font-size: 16px;
+    }
+
+
+}
+
+/* *********************************
+HOME PAGE RESPINSIVE END 
+********************************* */
+
+
+/* *************************************
+ABOUT US PAGE RESPONSIVE
+************************************* */
+
+/* ===============================
+Extra : 1. 1400px devices
+=============================== */
+@media screen and (max-width: 1400px){
+
+    /*********************** 
+    1.3- creativeTeam area here
+    ***********************/
+    .creative_thingking .patterns {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+
+/* =============================
+Extra large: 2. 1200 xlarge devices
+============================== */  
+@media screen and (max-width: 1200px){ 
+   
+    /*********************** 
+    2.9-1200 creativeTeam area here
+    ***********************/
+    .creative_team_single .creative_content h2 br {
+        display: none;
+    }
+
+    /*********************** 
+    2.10-1200 testmonial area here
+    ***********************/
+    .testmonial-items {
+        display: block;
+    }
+    .testmonial-items .img {
+        margin-left: 0;
+    }
+    .testmonial-content {
+        position: sticky;
+        display: block;
+        padding: 100px 40px 40px;
+        margin-top: -60px;
+    }
+    .testmonial-content img {
+        display: block;
+        margin: 0px 0px -70px 0px;
+        float: right;
+    }
+
+
+}
+
+/* ==============================
+large layout: 3. 992px large devices
+============================= */    
+@media screen and (max-width: 992px) { 
+   
+    /*********************** 
+    3.10-992 about-banner area here
+    ***********************/
+    .aboutUs_banner .vector img:nth-child(1) {
+        left: calc(70%);
+    }
+
+    /*********************** 
+    3.11-992 creativeTeam area here
+    ***********************/
+    .creative_content_area {
+        grid-template-columns: auto;
+        grid-gap: 80px;
+    }
+    .creative_thingking .patterns {
+        display: none;
+    }
+    .creative_content_area .creative_thingking_img {
+        order: 1;
+    }
+    .creative_content_area .creative_thingking_content,
+    .blog-port-order{
+        order: 2;
+    }
+
+    /*********************** 
+    3.12-992 testmonial area here
+    ***********************/
+    .testmonial-content p br {
+        display: none;
+    }
+
+}
+
+/* ===================================
+Small Layout: 5. 576px small devices
+=================================== */    
+@media screen and (max-width: 576px) {
+    /* 
+    #aboutUs-576-------------------]
+    */
+    /*********************** 
+    5.10-576 about-banner area here
+    ***********************/
+    .aboutUs_banner h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .aboutUs_banner ul li a {
+        font-size: 18px;
+    }
+
+    /*********************** 
+    5.11-576 creativeThink area here
+    ***********************/
+    .creative_thingking .creative_thingking_content h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .creative_thingking .creative_thingking_content p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /*********************** 
+    5.12-576 testmonial area here
+    ***********************/
+    .testmonial-items .img img:nth-child(1) {
+        width: 90%;
+    }
+    .testmonial-items .img img:nth-child(2) {
+        width: 100%;
+    }
+    .testmonial-content {
+        padding: 100px 20px 40px;
+    }
+    .testmonial-content h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .testmonial-content p {
+        font-size: 16px;
+    }
+
+}
+
+/* *************************************
+ABOUT US PAGE RESPONSIVE END
+************************************* */
+
+
+
+
+/* *************************************
+SERVICE PAGE RESPONSIVE
+************************************* */
+@media screen and (max-width: 1400px){
+ 
+    /*********************** 
+    1.4-1400 services area here
+    ***********************/
+    .services_single1 .vector img,
+    .services_single3 .vector img,
+    .services_single5 .vector img,
+    .portfolio .vector img:nth-child(2),
+    .blog_home .vector img:nth-child(3),
+    .blog_home .vector img:nth-child(2){
+        left: calc(98%);
+    }
+    
+    .services_single2 .vector img,
+    .services_single4 .vector img,
+    .services_single6 .vector img,
+    .portfolio .vector img:nth-child(1),
+    .portfolio .vector img:nth-child(3)
+    {
+        left: calc(-4%);
+    }
+    .blog_home .vector img:nth-child(1){
+        left: calc(2%);
+    }
+    .services-content.margin{
+        margin-left: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px){
+ 
+    /*********************** 
+    2.11-1200 services area here
+    ***********************/
+    .sercices_content p br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+ 
+    /*********************** 
+    4.5-768 services area here
+    ***********************/
+    .services_img {
+        margin-bottom: 60px;
+    }
+
+}
+
+
+@media screen and (max-width: 576px){
+
+    /*********************** 
+    5.13-576 services area here
+    ***********************/
+    .sercices_content h2 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .services_number li span {
+        font-size: 24px;
+    }
+
+}
+
+/* *************************************
+SERVICE  PAGE RESPONSIVE END
+************************************* */
+
+
+
+
+/* *************************************
+BLOG HOME PAGE RESPONSIVE
+************************************* */
+
+@media screen and (max-width: 576px){
+    /*********************** 
+    5.14-576 blog-portfolio area here
+    ***********************/
+    .blog_port_item .overlay h4 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* *************************************
+BLOG HOME  PAGE RESPONSIVE END
+************************************* */
+
+
+
+
+/* *************************************
+BLOG DETAILS PAGE RESPONSIVE
+************************************* */
+ 
+@media screen and (max-width: 992px){
+
+    /*********************** 
+    3.14-992 blog-details area here
+    ***********************/
+    .blog-details-left,
+    .c_map_items{
+        margin-bottom: 80px;
+    }
+    .blog-details-right,
+    .c_map_items {
+        margin-left: 0;
+    }
+}
+ 
+
+@media screen and (max-width: 576px){
+
+    /*********************** 
+    5.15-576 blog-details area here
+    ***********************/
+    .bdlp-content h4 {
+        font-size: 22px;
+    }
+    .bdlp-content p {
+        font-size: 16px;
+    }
+    .blog-details-left-social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bdls-tag {
+        margin-bottom: 20px;
+    }
+    .bdls-social li {
+        margin-right: 10px;
+    }
+    .bdll-title {
+        font-size: 22px;
+    }
+    .bdll-para {
+        font-size: 16px;
+    }
+    h4.widget-title {
+        font-size: 22px;
+    }
+
+}
+
+/* *************************************
+BLOG DETAILS  PAGE RESPONSIVE END
+************************************* */
+
+
+
+/* *************************************
+BLOG DETAILS LEFT PAGE RESPONSIVE
+************************************* */
+@media screen and (max-width: 992px){
+   
+    /*********************** 
+    3.15-992 blog-details area here
+    ***********************/
+    .blog-details-right.active {
+        margin-right: 0px;
+        margin-bottom: 80px;
+    }
+    .blog-details-left.active {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    /*********************** 
+    4.6-576 about-banner area here
+    ***********************/
+    .ab-bannerItem ul li a.active{
+        font-size: 16px;
+    }
+    .ab-bannerItem h2.active{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+/* *************************************
+BLOG DETAILS LEFT PAGE RESPONSIVE END
+************************************* */
+
+
+
+/* *************************************
+CONTACT PAGE RESPONSIVE
+************************************* */
+@media screen and (max-width: 576px){
+    /*********************** 
+    5.16-576 contact area here
+    ***********************/
+    .cf_groups:nth-child(1) {
+        grid-template-columns: auto;
+    }
+    .cf_groups{
+        margin-bottom: 30px;
+    }
+}
+
+
+/* *************************************
+CONTACT  PAGE RESPONSIVE END
+************************************* */
+
+
+
+
+/* *************************************
+ERROR PAGE RESPONSIVE
+************************************* */
+
+@media screen and (max-width: 576px){
+    /*********************** 
+    5.17-576 error 404 area here
+    ***********************/
+
+    .error_item_lists h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .error_item_lists h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .error_item_lists p br{
+        display: none;
+    }
+    .error_button a {
+        width: 200px;
+    }
+}
+
+/* *************************************
+ERROR  PAGE RESPONSIVE END
+************************************* */
